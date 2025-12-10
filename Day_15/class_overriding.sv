@@ -14,7 +14,7 @@ class child extends parent;
   endfunction
 endclass
 
-module class_overiding;
+module class_overriding;
   initial begin
    child cd;
    cd=new();

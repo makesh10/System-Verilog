@@ -23,6 +23,8 @@ module random_method;
     $display("\taddr = %0d \tdata = %0d",rd.addr,rd.data);
     //addr remains previous value
 
+    $display("\n\taddr.rand_mode() = %0d \tdata.rand_mode() = %0d",rd.addr.rand_mode(),rd.data.rand_mode());
+
   end
 endmodule
 
@@ -33,4 +35,6 @@ endmodule
 # 	addr = -35 	data = 33
 # Disabling randomization of one variable
 # 	addr = -35 	data = -67
+# 
+# 	addr.rand_mode() = 0 	data.rand_mode() = 1
 # exit
